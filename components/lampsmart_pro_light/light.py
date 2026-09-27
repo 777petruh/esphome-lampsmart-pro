@@ -29,7 +29,7 @@ CONFIG_SCHEMA = cv.All(
             cv.Optional(CONF_CONSTANT_BRIGHTNESS, default=False): cv.boolean,
             cv.Optional(CONF_REVERSED, default=False): cv.boolean,
             cv.Optional(CONF_MIN_BRIGHTNESS, default=0x7): cv.hex_uint8_t,
-            cv.Optional(CONF_GROUP, default=0x0): cv.hex_uint8_t,
+            cv.Optional(CONF_GROUP, default="0"): cv.string,
         }
     ),
     cv.has_none_or_all_keys(
