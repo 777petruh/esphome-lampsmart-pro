@@ -6,7 +6,7 @@ from esphome.const import CONF_ID
 lampsmartpro_ns = cg.esphome_ns.namespace('lampsmartpro')
 
 # Указываем ESPHome автоматически загружать и свет, и вентилятор из этой папки
-AUTO_LOAD = ["light", "fan"]
+AUTO_LOAD = ["light"]
 DEPENDENCIES = ["esp32"]
 
 CONFIG_SCHEMA = cv.Schema({})
